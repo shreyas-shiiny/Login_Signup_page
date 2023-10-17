@@ -1,0 +1,20 @@
+.signn {
+    text-align: center;
+    background-color: antiquewhite;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    cursor: pointer;
+    display: block;
+}
+
+.err {
+    text-align: center;
+    display: block;
+    color: darkred;
+}
+
+.suss {
+    color: darkgreen;
+    text-align: center;
+}

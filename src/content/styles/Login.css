@@ -1,0 +1,39 @@
+.common {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    cursor: pointer;
+    display: block;
+    left: 15%;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.white {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.icon-symbol {
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 2px;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    display: block;
+}
+
+.success {
+    color: green;
+    text-align: center;
+}

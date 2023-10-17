@@ -1,13 +1,27 @@
-import React  from "react";
-import Spotify from "./Components/Spotify";
+import React, { Component } from "react";
+import LoginPage from "./Components/LoginPage";
+import SignupPage from "./Components/SignupPage";
+import ForgotPassword from "./Components/ForgotPassword";
 
-const App=()=>{
-    return(
-       <div>
-<Spotify/>
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 
-</div>
-       
-    )
+
+class App extends Component {
+  render() {
+    return (
+      <>
+        <div>
+          <Router>
+            <Routes>
+              <Route path="/" element={<LoginPage />}></Route>
+              <Route path="/login" element={<LoginPage />}></Route>
+              <Route path="/signup" element={<SignupPage />}></Route>
+              <Route path="/ForgotPassword" element={<ForgotPassword />}></Route>
+            </Routes>
+          </Router>
+        </div>
+      </>
+    );
+  }
 }
-export default App
+export default App;
